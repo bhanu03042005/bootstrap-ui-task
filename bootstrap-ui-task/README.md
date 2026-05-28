@@ -78,9 +78,8 @@ Approximately 4 hours
 
 ---
 
-## Live Project
+## Project Repo
 
 GitHub Repository:
 https://github.com/bhanu03042005/bootstrap-ui-task/
-Live Preview:
-(Add your deployed website link here)
+
