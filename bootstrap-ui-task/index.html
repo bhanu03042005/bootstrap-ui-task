@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Agency - Build Modern Websites</title>
+    
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="text-primary">Nova</span> Agency
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL / HERO SECTION -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <!-- Slide 1: Build Modern Websites -->
+            <div class="carousel-item active hero-slide" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="carousel-content">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center min-vh-100">
+                            <div class="col-lg-8 text-center text-white">
+                                <h1 class="display-3 fw-bold mb-4 hero-title">Build Modern Websites</h1>
+                                <p class="lead mb-4 hero-subtitle">
+                                    Create stunning, responsive web experiences with cutting-edge design and technology.
+                                </p>
+                                <a href="#" class="btn btn-primary btn-lg me-2" data-bs-toggle="modal" data-bs-target="#quickContactModal">Get Started</a>
+                                <a href="about.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Expert Web Design -->
+            <div class="carousel-item hero-slide" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <div class="carousel-content">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center min-vh-100">
+                            <div class="col-lg-8 text-center text-white">
+                                <h1 class="display-3 fw-bold mb-4 hero-title">Expert Web Design</h1>
+                                <p class="lead mb-4 hero-subtitle">
+                                    Professional designs that stand out and convert visitors into customers.
+                                </p>
+                                <a href="#" class="btn btn-light btn-lg me-2" data-bs-toggle="modal" data-bs-target="#quickContactModal">Start Your Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Fast & Reliable -->
+            <div class="carousel-item hero-slide" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <div class="carousel-content">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center min-vh-100">
+                            <div class="col-lg-8 text-center text-white">
+                                <h1 class="display-3 fw-bold mb-4 hero-title">Fast & Reliable</h1>
+                                <p class="lead mb-4 hero-subtitle">
+                                    High-performance websites optimized for speed and reliability on all devices.
+                                </p>
+                                <a href="#" class="btn btn-light btn-lg me-2" data-bs-toggle="modal" data-bs-target="#quickContactModal">Request Demo</a>
+                                <a href="contact.html" class="btn btn-outline-light btn-lg">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next">
+        </button>
+    </div>
+
+    <!-- FEATURES SECTION -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">Our Services</h2>
+                <p class="text-muted">Delivering excellence in every project</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Web Design Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-palette"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Web Design</h5>
+                            <p class="card-text text-muted">
+                                Create beautiful and intuitive user interfaces that engage your audience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-code-square"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Development</h5>
+                            <p class="card-text text-muted">
+                                Build robust, scalable applications using modern technologies and best practices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support Card -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card feature-card h-100 shadow-sm border-0">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon mb-3">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">24/7 Support</h5>
+                            <p class="card-text text-muted">
+                                Round-the-clock support to ensure your website runs smoothly all the time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="why-us-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <!-- Image Column -->
+                <div class="col-lg-6">
+                    <div class="why-us-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop" 
+                             alt="Why Choose Us" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="col-lg-6">
+                    <h2 class="section-title fw-bold mb-4">Why Choose Nova Agency?</h2>
+                    <p class="text-muted mb-4">
+                        We combine creativity with technology to deliver exceptional results that exceed expectations.
+                    </p>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <span class="badge bg-primary me-2">✓</span>
+                            <strong>Expert Team</strong> - Experienced professionals dedicated to excellence
+                        </li>
+                        <li class="mb-3">
+                            <span class="badge bg-primary me-2">✓</span>
+                            <strong>Modern Technology</strong> - Using latest tools and frameworks
+                        </li>
+                        <li class="mb-3">
+                            <span class="badge bg-primary me-2">✓</span>
+                            <strong>Responsive Design</strong> - Works perfectly on all devices
+                        </li>
+                        <li class="mb-3">
+                            <span class="badge bg-primary me-2">✓</span>
+                            <strong>Timely Delivery</strong> - We respect deadlines and commitments
+                        </li>
+                        <li class="mb-3">
+                            <span class="badge bg-primary me-2">✓</span>
+                            <strong>24/7 Support</strong> - Always available when you need us
+                        </li>
+                    </ul>
+
+                    <a href="contact.html" class="btn btn-primary mt-4">Contact Us Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS CAROUSEL SECTION -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title fw-bold">What Our Clients Say</h2>
+                <p class="text-muted">Real feedback from our satisfied clients</p>
+            </div>
+
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#testimonialsCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- Testimonial 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-5 bg-white rounded-3 shadow-sm">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="lead mb-4">
+                                        "Nova Agency transformed our online presence completely. Their team is professional, 
+                                        responsive, and delivers exceptional results. Highly recommended!"
+                                    </p>
+                                    <h6 class="fw-bold">John Smith</h6>
+                                    <p class="text-muted small">CEO, Tech Solutions Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-5 bg-white rounded-3 shadow-sm">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="lead mb-4">
+                                        "Working with Nova Agency was a game-changer for our business. They delivered 
+                                        a beautiful, responsive website on time and within budget. Great team!"
+                                    </p>
+                                    <h6 class="fw-bold">Sarah Williams</h6>
+                                    <p class="text-muted small">Marketing Director, Digital Ventures</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-5 bg-white rounded-3 shadow-sm">
+                                    <div class="mb-3">
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                    <p class="lead mb-4">
+                                        "The support and communication from Nova Agency was outstanding. They understood 
+                                        our vision and brought it to life beautifully. Definitely using them again!"
+                                    </p>
+                                    <h6 class="fw-bold">Michael Rodriguez</h6>
+                                    <p class="text-muted small">Founder, Creative Studio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev" aria-label="Previous">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next" aria-label="Next">
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK CONTACT MODAL -->
+    <div class="modal fade" id="quickContactModal" tabindex="-1" aria-labelledby="quickContactLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-primary text-white border-0">
+                    <h5 class="modal-title fw-bold" id="quickContactLabel">Quick Contact</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form>
+                        <div class="mb-3">
+                            <label for="quickName" class="form-label fw-bold">Your Name</label>
+                            <input type="text" class="form-control" id="quickName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quickEmail" class="form-label fw-bold">Email Address</label>
+                            <input type="email" class="form-control" id="quickEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="quickMessage" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" id="quickMessage" rows="3" placeholder="Brief message..."></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100 fw-bold" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#successModal">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MESSAGE MODAL -->
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 text-center">
+                <div class="modal-body p-5">
+                    <div class="mb-4">
+                        <i class="bi bi-check-circle text-success" style="font-size: 4rem;"></i>
+                    </div>
+                    <h5 class="modal-title fw-bold mb-3" id="successLabel">Message Sent Successfully!</h5>
+                    <p class="text-muted mb-4">
+                        Thank you for reaching out. We'll get back to you within 24 hours with more information.
+                    </p>
+                    <button type="button" class="btn btn-success fw-bold" data-bs-dismiss="modal">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-4">
+                    <h5 class="mb-3">Nova Agency</h5>
+                    <p class="text-muted">Building modern websites that drive results for your business.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none footer-link">Home</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none footer-link">About</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none footer-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-muted text-decoration-none footer-link me-3">Facebook</a>
+                        <a href="#" class="text-muted text-decoration-none footer-link me-3">Twitter</a>
+                        <a href="#" class="text-muted text-decoration-none footer-link">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center py-3">
+                <p class="text-muted mb-0">&copy; 2024 Nova Agency. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Carousel Auto-Advance Script -->
+    <script>
+        // Auto-advance hero carousel every 8 seconds
+        const heroCarousel = document.getElementById('heroCarousel');
+        if (heroCarousel) {
+            const carousel = new bootstrap.Carousel(heroCarousel, {
+                interval: 8000,
+                wrap: true
+            });
+        }
+
+        // Auto-advance testimonials carousel every 6 seconds
+        const testimonialsCarousel = document.getElementById('testimonialsCarousel');
+        if (testimonialsCarousel) {
+            const carousel = new bootstrap.Carousel(testimonialsCarousel, {
+                interval: 6000,
+                wrap: true
+            });
+        }
+
+        // Generate success message after form submit
+        document.getElementById('successModal').addEventListener('show.bs.modal', function() {
+            // Clear form fields
+            document.getElementById('quickName').value = '';
+            document.getElementById('quickEmail').value = '';
+            document.getElementById('quickMessage').value = '';
+        });
+    </script>
+</body>
+</html>
